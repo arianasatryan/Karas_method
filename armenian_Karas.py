@@ -133,6 +133,7 @@ def work_with(file_dir, train_or_test): #train_or_test is a string just to separ
             style_change_borders.append(start_of_paragraphs[tpl[0] + 1])  # +1 cause the numeration of paragraphs starts at 1
     style_change_borders.sort()
 
+    # writing results
     if train_or_test == 'train':
         output_path = train_results_path
     elif train_or_test == 'test':
